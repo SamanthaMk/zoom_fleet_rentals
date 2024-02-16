@@ -52,36 +52,34 @@ const SearchManufacturer = ({
           >
             <Combobox.Options>
               {filteredManufacturers.map((item) => (
-                  <Combobox.Option
-                    key={item}
-                    className={({ active }) => `
+                <Combobox.Option
+                  key={item}
+                  className={({ active }) => `
             relative serach-manufacturer__option
             ${active ? "bg-primary-blue text-white" : "text-gray-900"}
            `}
                   value={item}
-                  >
-                  {({selected, active}) => (
+                >
+                  {({ selected, active }) => (
                     <>
-                     <span
-                          className={`block truncate ${
-                            selected ? 'font-medium' : 'font-normal'
+                      <span
+                        className={`block truncate ${
+                          selected ? "font-medium" : "font-normal"
+                        }`}
+                      >
+                        {item}
+                      </span>
+                      {selected ? (
+                        <span
+                          className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
+                            active ? "text-white" : "text-teal-600"
                           }`}
-                        >
-                          {item}
-                        </span>
-                        {selected ? (
-                          <span
-                            className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
-                              active ? 'text-white' : 'text-teal-600'
-                            }`}
-                          >
-                          </span>
-                        ) : null}
+                        ></span>
+                      ) : null}
                     </>
                   )}
-                  </Combobox.Option>
-                )
-              )}
+                </Combobox.Option>
+              ))}
             </Combobox.Options>
           </Transition>
         </div>
