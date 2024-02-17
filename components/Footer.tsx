@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import { footerLinks } from "@/constants";
 
 const Footer = () => (
@@ -14,7 +13,7 @@ const Footer = () => (
           height={18}
           className="object-contain rounded-full"
         />
-        <p className="text-base text-gray-700">
+        <p className="text-base text-black-700">
           Zoom Fleet Rentals 2024 <br />
           All Rights Reserved &copy;
         </p>
@@ -29,7 +28,7 @@ const Footer = () => (
                 <Link
                   key={link.title}
                   href={link.url}
-                  className="text-gray-500"
+                  className="text-black-500"
                 >
                   {link.title}
                 </Link>
@@ -44,10 +43,10 @@ const Footer = () => (
       <p>@2024 Zoom Fleet Rentals. All rights reserved</p>
 
       <div className="footer__copyrights-link">
-        <Link href="/" className="text-gray-500">
+        <Link href="/" className="text-black-700">
           Privacy & Policy
         </Link>
-        <Link href="/" className="text-gray-500">
+        <Link href="/" className="text-black-700">
           Terms & Condition
         </Link>
       </div>

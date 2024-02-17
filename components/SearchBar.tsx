@@ -11,8 +11,8 @@ const SearchButton = ({ otherClasses }: { otherClasses: string }) => (
     <Image
       src="/magnifying-glass.svg"
       alt="/magnifying-glass"
-      width={40}
-      height={40}
+      width={50}
+      height={50}
       className="object-contain"
     />
   </button>
@@ -53,7 +53,7 @@ const SearchBar = () => {
   };
 
   return (
-    <form className="searchbar" onSubmit={handleSearch}>
+    <form className="searchbar bg-white" onSubmit={handleSearch}>
       <div className="searchbar__item">
         <SearchManufacturer
           manufacturer={manufacturer}

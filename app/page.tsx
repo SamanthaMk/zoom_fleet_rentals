@@ -20,10 +20,12 @@ export default async function Home({ searchParams }) {
 
       <div className="mt-12 padding-x padding-y max-width" id="discover">
         <div className="home__text-container">
-          <h1 className="text-4xl font-extrabold"> Car Fleet Catalogue</h1>
-          <p>
-            Explore the variety of cars we have choose the one that fits your
-            taste
+          <h1 className="text-4xl font-extrabold text-white">
+            {" "}
+            Car Fleet Catalogue
+          </h1>
+          <p className="text-white">
+            Explore the variety of our best cars that suits your taste
           </p>
         </div>
         <div className="home__filters">
@@ -50,7 +52,7 @@ export default async function Home({ searchParams }) {
           </section>
         ) : (
           <div className="home__error-container">
-            <h2 className="text-black text-xl font-bold">Oops, no results</h2>
+            <h2 className="text-white text-xl font-bold">Oops, no results</h2>
             <p>{allCars?.message}</p>
           </div>
         )}
