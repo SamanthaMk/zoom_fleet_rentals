@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="hero">
       <div className="flex-1 pt-36 padding-x">
         <h1 className="hero__title">
-          Rent, Find, Hire the best cars - quickly and easily.
+          Rent, Find, Hire,Book the best quality cars - quickly and easily.
         </h1>
         <p className="hero_subtitle">
           Zoom Fleet Rentals. Streamline your car rental experience with our
