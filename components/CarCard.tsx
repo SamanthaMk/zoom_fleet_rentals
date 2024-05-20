@@ -1,21 +1,21 @@
-"use client"
+"use client";
 
-import { useState } from 'react'
-import Image from 'next/image'
-import { CarProps } from '@/types'
-import { CarDetails, CustomButton } from '.'
-import { calculateCarRent, generateCarImageUrl } from '@/utils'
+import { useState } from "react";
+import Image from "next/image";
+import { CarProps } from "@/types";
+import { CarDetails, CustomButton } from ".";
+import { calculateCarRent, generateCarImageUrl } from "@/utils";
 
 interface CarCardProps {
-    car: CarProps;
+  car: CarProps;
 }
 
-const CarCard = ({ car } : CarCardProps) => {
-    const {city_mpg, year, make, model, transmission, drive} = car;
+const CarCard = ({ car }: CarCardProps) => {
+  const { city_mpg, year, make, model, transmission, drive } = car;
 
-const [IsOpen, setIsOpen] = useState(false);
+  const [IsOpen, setIsOpen] = useState(false);
 
-const carRent = calculateCarRent(city_mpg, year); 
+  const carRent = calculateCarRent(city_mpg, year);
 
   return (
     <div className="car-card group">
@@ -82,6 +82,6 @@ const carRent = calculateCarRent(city_mpg, year);
       />
     </div>
   );
-}
+};
 
-export default CarCard
+export default CarCard;
